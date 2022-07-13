@@ -1,0 +1,106 @@
+/* 
+background color = #051a0a
+font color = #52c422
+*/
+
+
+@font-face {
+    font-family: Fallout;
+    src: url(fonts/Overseer.otf);
+  }
+
+body {
+    background-color: #051a0a;
+    color: #52c422;
+    font-family: Fallout, monospace;
+}
+
+h1 {
+  margin: 50px;
+  font-size: 45pt;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#specialContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 400px;
+  height: fit-content;
+  border: 1px solid #52c422;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  background-color: rgba(0,0,0,.45);
+  font-size: 15pt;
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5px;
+  justify-content: space-around;
+}
+
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 400px;
+  height: fit-content;
+  border: 1px solid #52c422;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  background-color: rgba(0,0,0,.45);
+  font-size: 15pt;
+}
+
+nav {
+    width: 100%;
+    height: 30px;
+}
+
+nav p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#homeButton {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20pt;
+    width: 150px;
+    height: 85px;
+    font-family: Fallout, monospace;
+    background-color: rgba(0,0,0,0);
+    color:#52c422;
+    border: none;
+    justify-content: center;
+}
+
+
+#homeButton a {
+  margin-right: auto;
+  margin-left: auto;
+  text-decoration: none;
+  color:#52c422;
+}
+
+#homeButton:hover {
+    border: 1px solid #52c422;
+    border-radius: 12px;
+}

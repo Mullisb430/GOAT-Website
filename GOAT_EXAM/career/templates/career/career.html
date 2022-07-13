@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+{% endblock head %}
+
+{% block body %}
+    <a href="/">
+        <button id="homeButton" href='/'>
+            Back Home
+        </button>
+    </a>
+
+    <h1 align='center'>{{ career.name }}</h1>
+    <main>
+        <div id='specialContainer'>
+            <div class='skillContainer'>
+                <h3>Strength</h3>
+                <h3>{{ career.strength }}</h3>
+            </div>
+            <div class='skillContainer'>
+                <h3>Perception</h3>
+                <h3>{{ career.perception }}</h3>
+            </div>
+            <div class='skillContainer'>
+                <h3>Endurance</h3>
+                <h3>{{ career.endurance }}</h3>
+            </div>
+            <div class='skillContainer'>
+                <h3>Charisma</h3>
+                <h3>{{ career.charisma }}</h3>
+            </div>
+            <div class='skillContainer'>
+                <h3>Intelligence</h3>
+                <h3>{{ career.intelligence }}</h3>
+            </div>
+            <div class='skillContainer'>
+                <h3>Agility</h3>
+                <h3>{{ career.agility }}</h3>
+            </div>
+            <div class='skillContainer'>
+                <h3>Luck</h3>
+                <h3>{{ career.luck }}</h3>
+            </div>
+        </div>
+        <div id="skills">
+            <div class='skillContainer'>
+                <h5>Barter </h5>
+                <h5>{{ career.barter }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Big Guns </h5>
+                <h5>{{ career.big_guns }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Energy Weapons </h5>
+                <h5>{{ career.energy_weapons }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Explosives </h5>
+                <h5>{{ career.explosives }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Lock Pick </h5>
+                <h5>{{ career.lock_pick }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Medicine </h5>
+                <h5>{{ career.medicine }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Melee Weapons</h5>
+                <h5>{{ career.melee_weapons }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Repair</h5>
+                <h5>{{ career.repair }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Science</h5>
+                <h5>{{ career.science }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Small Guns</h5>
+                <h5>{{ career.small_guns }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Sneak</h5>
+                <h5>{{ career.sneak }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Speech</h5>
+                <h5>{{ career.speech }}</h5>
+            </div>
+            <div class='skillContainer'>
+                <h5>Unarmed</h5>
+                <h5>{{ career.unarmed }}</h5>
+            </div>
+        </div>
+    </main>
+{% endblock body %}

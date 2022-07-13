@@ -1,0 +1,138 @@
+/* 
+background color = #051a0a
+font color = #52c422
+*/
+
+@font-face {
+    font-family: Fallout;
+    src: url(fonts/Overseer.otf);
+  }
+
+body {
+    background-color: #051a0a;
+    color: #52c422;
+    padding-bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    padding-top: 100px;
+}
+
+#goatTitle {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 200pt;
+    font-family: Fallout, monospace;
+    border-bottom: .7px solid #52c422;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#startButton {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 55pt;
+    width: 280px;
+    height: 130px;
+    font-family: Fallout, monospace;
+    background-color: rgba(0,0,0,0);
+    color:#52c422;
+    border: none;
+}
+
+#startButton a {
+    text-decoration: none;
+    color:#52c422;
+}
+
+p strong {
+    font-size: 18pt;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 525px;
+    font-size: 15pt;
+    font-family: Fallout, monospace;
+    background-color: rgba(0,0,0,0);
+    color:#52c422;
+    margin-bottom: 100px;
+    border: none;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 525px;
+    font-size: 15pt;
+    font-family: Fallout, monospace;
+    background-color: rgba(0,0,0,0);
+    color:#52c422;
+    margin-bottom: 100px;
+    border: none;
+}
+
+legend {
+    font-family: Fallout, monospace;
+}
+
+nav {
+    width: 100%;
+    height: 30px;
+}
+
+nav p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#questionContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 700px;
+    height: fit-content;
+    text-align: center;
+    border: 2px solid #52c422;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+#answerContainer {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+#question {
+    font-family: Fallout, monospace;
+    margin-bottom: 25px;
+}
+
+#answerContainer button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 510px;
+    height: 225px;
+}
+
+#startButton:hover {
+    border: 1px solid #52c422;
+    border-radius: 12px;
+}
+
+#answerContainer button:hover {
+    border: 1px solid #52c422;
+    border-radius: 12px;
+}
